@@ -31,11 +31,10 @@ public class OneAway {
         }
         if (diff == 0) {
             return true;
-        } else {
-            if (diff == 1) {
-                if (i < s1.length() || j < s2.length()) {
-                    return false;
-                }
+        }
+        if (diff == 1) {
+            if (i < s1.length() || j < s2.length()) {
+                return false;
             }
         }
         return true;
