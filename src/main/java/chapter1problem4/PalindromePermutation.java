@@ -13,13 +13,13 @@ public class PalindromePermutation {
         for (char c : input.toCharArray()) {
             charMap.put(c, charMap.getOrDefault(c, 0) + 1);
         }
-        boolean hasCharsWithOddCount = False;
+        boolean hasCharsWithOddCount = false;
         for (char c : charMap.keySet()) {
             if (charMap.get(c) % 2 == 1) {
                 if (input.length() % 2 == 0 || hasCharsWithOddCount) {
                     return false;
                 }
-                hasCharsWithOddCount = True;
+                hasCharsWithOddCount = true;
             }
         }
         return true;
