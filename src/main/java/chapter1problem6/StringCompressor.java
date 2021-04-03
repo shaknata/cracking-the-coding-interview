@@ -6,10 +6,7 @@ package chapter1problem6;
 public class StringCompressor {
 
     public static String stringCompress(String input) {
-        if (input.length() == 1) {
-            return input;
-        }
-        if (input.length() == 0) {
+        if ((input.length() == 1) || (input.length() == 0)) {
             return input;
         }
 
